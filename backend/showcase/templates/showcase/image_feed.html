@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Showcase</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            
+        }
+        #media {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        img {
+            height: 100%;
+            width: auto;
+            object-position: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="media">
+        <img src="http://localhost:8000/api/image/random" alt="Image">
+        <script>
+            setInterval(() => {
+                location.reload();
+            }, 10000)
+        </script>
+    </div>
+    
+</body>
+</html>
